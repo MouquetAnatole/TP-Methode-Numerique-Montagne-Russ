@@ -28,3 +28,7 @@ class plan :   # pour faire un plan incliné
 >> >> self.u
 >> >> self.v
 >> >> self.w
+
+
+Def contact(plan,sph):
+>>
