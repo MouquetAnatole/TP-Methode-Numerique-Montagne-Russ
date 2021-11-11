@@ -29,6 +29,18 @@ class plan :   # pour faire un plan incliné
 >> >> self.v
 >> >> self.w
 
+#pour l'équation de plan
+#d= -plan.u*plan.x-plan.v*plan.y-plan.w*plan.z
+
+
+########début code
+
 
 Def contact(plan,sph):
->>
+>> d= -plan.u*plan.x-plan.v*plan.y-plan.w*plan.z
+>> if abs(sph.x*plan.u+sph.y*plan.v+sph.z*plan.w+d)/np.sqrt(plan.u**2+plan.v**2+plan.w**2)<=radius :
+>> >> return True
+>> return False
+
+
+
