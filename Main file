@@ -1,2 +1,14 @@
+#j'ai pas de tab sur téléphone donc il y aura des >>
+
+
+
 import matplotlib.pyplot as plt 
 import numpy as np
+from mpl_toolkits.mplot3d import *
+
+class sphere :
+>>def __init__(self,x,y,z,radius)
+>> >> self.x
+>> >> self.Y
+>> >> self.z
+>> >> self.radius
