@@ -4,7 +4,10 @@
 
 import matplotlib.pyplot as plt 
 import numpy as np
+import matplotlib.animation as anim
 from mpl_toolkits.mplot3d import *
+
+
 
 class sph :        # pour faire une sphère
 >> def __init__(self,x,y,z,radius)
