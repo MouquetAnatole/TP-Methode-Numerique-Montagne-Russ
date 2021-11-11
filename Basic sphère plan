@@ -45,10 +45,9 @@ Z = 10 * np.outer(np.ones(np.size(A)), np.cos(B))
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
 
-S=[ax.plot_surface(i.r*X+i.x, i.r*Y+i.y, i.r*Z+i.z, color='b') for i in Ω[0]]
-# for i in Ω[1]:
-#     d= -i.u*i.x-i.v*i.y-i.w*i.z
-#     ax.contourf([50,50,-50,-50],[50,-50,50,-50],[(-d-i.u*50-i.v*50)/i.w,(-d-i.u*50-i.v*-50)/i.w,(-d-i.u*-50-i.v*50)/i.w,(-d-i.u*-50-i.v*-50)/i.w])
+# i=Ω[1][0]
+# d= -i.u*i.x-i.v*i.y-i.w*i.z
+# plot_surface([50,50,-50,-50],[50,-50,50,-50],[(-d-i.u*50-i.v*50)/i.w,(-d-i.u*50-i.v*-50)/i.w,(-d-i.u*-50-i.v*50)/i.w,(-d-i.u*-50-i.v*-50)/i.w])
 
 ######## début code
 
@@ -72,8 +71,40 @@ def animation(k):
         S[l].Y=i.r*Y+i.y
         S[l].Z=i.r*Z+i.z
         l+=1
-    return S
+    return [i for i in S]
 
-ani = anim.FuncAnimation(fig=fig, func=animation, frames=range(1000), interval=100, blit=True)
-ani.save(filename='basicSpherePlan',writer=None)
+S=[ax.plot_surface(i.r*X+i.x, i.r*Y+i.y, i.r*Z+i.z, color='b') for i in Ω[0]]
+
+ani = anim.FuncAnimation(fig=fig,func=animation, frames=range(36000),interval=1000, blit=True)
+
+# ani.save(filename='basicSpherePlan.mp4',writer=None)
 plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
