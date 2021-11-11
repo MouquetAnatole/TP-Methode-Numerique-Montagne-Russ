@@ -75,4 +75,5 @@ def animation(k):
     return S
 
 ani = anim.FuncAnimation(fig=fig, func=animation, frames=range(1000), interval=100, blit=True)
+ani.save(filename='basicSpherePlan',writer=None)
 plt.show()
