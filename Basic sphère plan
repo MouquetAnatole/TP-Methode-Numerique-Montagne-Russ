@@ -6,9 +6,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 from mpl_toolkits.mplot3d import *
 
-class sphere :
+class sph :        # pour faire une sphère
 >>def __init__(self,x,y,z,radius)
 >> >> self.x
 >> >> self.Y
 >> >> self.z
 >> >> self.radius
+
+#plan incliné
+
+PX=np.array()
+PY=np.array()
+PZ=np.array()
