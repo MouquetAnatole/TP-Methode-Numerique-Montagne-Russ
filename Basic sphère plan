@@ -7,14 +7,21 @@ import numpy as np
 from mpl_toolkits.mplot3d import *
 
 class sph :        # pour faire une sphère
->>def __init__(self,x,y,z,radius)
+>> def __init__(self,x,y,z,radius)
 >> >> self.x
 >> >> self.Y
 >> >> self.z
 >> >> self.radius
 
-#plan incliné
+class plan :   # pour faire un plan incliné
+>> def __init__(self,x,y,z,u,v,w)
 
-PX=np.array()
-PY=np.array()
-PZ=np.array()
+# point du plan
+>> >> self.x
+>> >> self.Y
+>> >> self.z
+
+# vecteur normal du plan
+>> >> self.u
+>> >> self.v
+>> >> self.w
